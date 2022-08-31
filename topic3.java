@@ -14,7 +14,7 @@ class Student                       //class with object
     {
         System.out.println(age);
     }
-    public void println(String name, int age)       //creating method overloading ----3 same name but different function 
+    public void printinfo(String name, int age)       //creating method overloading ----3 same name but different function 
     {
         System.out.println(name + " " + age);
     }
@@ -34,7 +34,7 @@ public class overloading{
    
      s1.printinfo(s1.name);             //calling function overloading 
      s1.printinfo(s1.age);
-     //s1.printinfo(s1.name, s1.age);
+     s1.printinfo(s1.name, s1.age);
 
     }
 }
