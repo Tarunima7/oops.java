@@ -1,7 +1,5 @@
 //multiple inheritance use of interface with implements and extend
 
-
-
 //base interface1
 interface Mother
 {
@@ -20,11 +18,11 @@ interface Son extends Mother,Father          //extends means that you are creati
 {
     void Displayfeature();
 }
-class Person implements Son                //implements means you are using the elements of a Java Interface in your class.
+class Person implements Son                //Implements means you are using the elements of a Java Interface in your class.
 
 {
 
-    @Override                                //child extend parent 
+    @Override                       //child extend parent 
     public void Mothersfeatures()           //function defination
     {
         System.out.println("hi, i'am mother");
@@ -44,12 +42,12 @@ class Person implements Son                //implements means you are using the 
     }
 }
 
-public class MultipleInheritance1
+public class Demo
 {
     
-    public static void main(String[] args)
+    public static void main(String args[])
   {
-    //Child child =new Child();   //generate error 
+    //Child child =new Child();             //generate error 
     Person person = new Person();
 
     person.Mothersfeatures();
@@ -57,7 +55,9 @@ public class MultipleInheritance1
     person.Displayfeature();
 
   }
+
 }
+
 
 
 
